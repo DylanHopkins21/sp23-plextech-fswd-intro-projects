@@ -17,6 +17,7 @@ p {
   background-color: green;
   margin-bottom: 20px;
   justify-content: space-between;
+<<<<<<< HEAD
 }
 
 .wrapper5 {
@@ -51,6 +52,8 @@ p {
   background-color: orange;
   margin-bottom: 20px;
   justify-content: space-between;
+=======
+>>>>>>> 6f4f9feb129061da504264299e4b70d3e419928d
 }
 
 /*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
@@ -58,6 +61,7 @@ p {
 .redExample {
   flex: 1;
   background-color: red;
+  justify-content: center;
 }
 
 /*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
@@ -65,6 +69,7 @@ p {
 .blueExample {
   flex: 1;
   background-color: blue;
+  justify-content: center;
 }
 
 /*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
@@ -82,6 +87,7 @@ p {
 
 /* TODO: Add CSS for the rest of your solution below */
 
+<<<<<<< HEAD
 .red3 {
   width: 60px;
   height: 60px;
@@ -128,3 +134,88 @@ p {
   width: 60px;
   background-color: green;
 }
+=======
+.redExample2 {
+  width: 80px;
+  background-color: red;
+}
+
+.redSquareCenter {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  background-color: red;
+}
+
+
+.wrapper2 {
+  display: flex;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+
+.blueCenter {
+  width: 80px;
+  height: 60px;
+  align-self: center;
+  background-color: blue;
+}
+
+.redWrapper {
+  display: flex;
+  height: 60px;
+  background-color: red;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.greenMid {
+  flex: 1;
+  background-color: transparent;
+}
+
+.blueThin {
+  height: 20px;
+  background-color: blue;
+}
+
+.greenThin {
+  height: 20px;
+  background-color: transparent;
+}
+
+.orangeRec {
+  background-color: orange;
+  width: 60px;
+  height: 60px;
+}
+
+.newWrapper {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-evenly;
+}
+
+.orangeWrapper {
+  display: flex;
+  height: 60px;
+  background-color: orange;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.greenSlim {
+  height: 60px;
+  width: 20px;
+  background-color: green;
+}
+
+.orangeBorder {
+  height: 60px;
+  width: 0px;
+  background-color: orange;
+}
+>>>>>>> 6f4f9feb129061da504264299e4b70d3e419928d
