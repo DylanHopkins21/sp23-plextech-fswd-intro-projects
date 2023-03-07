@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="description" content="Free Web tutorials for HTML and CSS">
-        <meta name="author" content="John Doe">
-        <title>A Meaningful Page Title</title>
+        <meta name="description" content="amazing first page">
+        <meta name="author" content="D Hop">
+        <title>First Activity Title</title>
+        <link rel="icon" type="image/x-icon" href="leafM.png">
+        <link rel="stylesheet" href="activity.css">
     </head>
-    <body>
-        
+    <body id="main">
+        <script>
+            document.body.style.backgroundColor = "white"
+            document.body.style.color = "black"
+            let d = new Date();
+            document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+            function changeDark() {
+                if (document.body.style.backgroundColor === "white") {
+                    document.body.style.backgroundColor = "black"
+                    document.body.style.color = "white"
+                } else {
+                    document.body.style.backgroundColor = "white"
+                    document.body.style.color = "black"
+                }
+            }
+        </script>
+        <button onclick="changeDark()">Toggle Light/Dark Mode!</button>
+        <header>
+            <h1>This works hopefully</h1>
+        </header>
+        <div id="middle">
+            <div id="left">
+                <a>Option 1</a>
+                <a>Option 2</a>
+                <a>Option 3</a>
+                <a>Option 4</a>
+            </div>
+            <div id="right">
+            </div>
+        </div>
+        <footer>
+        </footer>
+            
     </body>
 </html>

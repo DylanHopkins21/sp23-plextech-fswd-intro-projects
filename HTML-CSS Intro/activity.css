@@ -1,0 +1,33 @@
+#main {
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh; 
+    width: 100vw;
+}
+
+header {
+    height: 10%; 
+    background-color: lightblue;
+}
+
+#middle {
+    display: flex; 
+    flex-direction: row; 
+    height: 70%;
+}
+
+footer {
+    display: flex; 
+    background-color: orange; 
+    width: 100vw; 
+    height: 20%;
+}
+
+#left {
+    background-color: red;
+}
+
+#right {
+    background-color: pink; 
+    width: 100vw;
+}
