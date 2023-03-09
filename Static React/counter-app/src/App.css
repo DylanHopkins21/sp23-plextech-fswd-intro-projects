@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+.Fruits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+img {
+  width: 10%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
