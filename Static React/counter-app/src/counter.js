@@ -3,20 +3,19 @@ import './App.css';
 import { useState } from 'react';
 import Button from './components/Button';
 
-function Counter() {
-  const [count, setCount] = useState(0);
+function Counter({fruit, setFruit}) {
 
   function increment() {
-    setCount(count + 1);
+    setFruit(fruit + 1);
   }
   
   function decrement() {
-    setCount(count - 1);
+    setFruit(fruit - 1);
   }
 
   return (
     <div className="App">
-      <p>Count: {count}</p>
+      <p>Count: {fruit}</p>
       <Button title={"+"} task = {increment}></Button>
       <Button title={"-"} task = {decrement}></Button>
     </div>
