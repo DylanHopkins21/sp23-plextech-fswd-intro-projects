@@ -13,12 +13,15 @@ function DataEntry() {
     const [appleCount, setAppleCount] = useState(0);
     const [pearCount, setPearCount] = useState(0);
     const [orangeCount, setOrangeCount] = useState(0);
+    const [list, setList] = useState([]);
+
     useEffect(() => {
         if (state != null) {
             setBananaCount(state[0]);
             setAppleCount(state[1]);
             setPearCount(state[2]);
-            setOrangeCount(state[3]); 
+            setOrangeCount(state[3]);
+            setList(state[4]) 
         }
     }, [])
     return ( 
@@ -30,13 +33,14 @@ function DataEntry() {
             <Counter fruit={pearCount} setFruit = {setPearCount}></Counter>
             <Counter fruit={orangeCount} setFruit = {setOrangeCount}></Counter>
         </div>
-        <FoodList ban={bananaCount} app={appleCount} pea={pearCount} ora={orangeCount}></FoodList>
-        <ResetButton setApp={setAppleCount} setBan={setBananaCount} setPea={setPearCount} setOra={setOrangeCount}></ResetButton>
+        <FoodList ban={bananaCount} app={appleCount} pea={pearCount} ora={orangeCount} 
+        setApple={setAppleCount} setBanana={setBananaCount} setPear={setPearCount} 
+        setOrange={setOrangeCount} foods={list} setFoods={setList}></FoodList>
         <>
         <nav>
             <ul>
             <li>
-                <Link to="/recommendation" state={[bananaCount, appleCount, pearCount, orangeCount]}>Recommendations</Link>
+                <Link to="/recommendation" state={[bananaCount, appleCount, pearCount, orangeCount, list]}>Recommendations</Link>
             </li>
             </ul>
         </nav>

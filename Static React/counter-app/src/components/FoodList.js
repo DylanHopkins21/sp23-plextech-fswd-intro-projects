@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useEffect } from 'react';
+import ResetButton from "./ResetButton";
 
-function FoodList( {ban, app, pea, ora} ) {
-    const [foods, setFoods] = useState([]);
+function FoodList( {ban, app, pea, ora, setApple, setBanana, setPear, setOrange, foods, setFoods} ) {
     const usePrevious = (value) => {
         const ref = React.useRef();
         useEffect(() => {
@@ -19,10 +19,15 @@ function FoodList( {ban, app, pea, ora} ) {
     useEffect(() => handleFruit(foods, setFoods, previousApp, app, "apple: $2 "), [app])
     useEffect(() => handleFruit(foods, setFoods, previousPea, pea, "pear: $4 "), [pea])
     useEffect(() => handleFruit(foods, setFoods, previousOra, ora, "orange: $5 "), [ora])
-    useEffect(() => setFoods([]), []);
+    
     return (
         <div>
-            <a>{foods}</a>
+            <div>
+                <a>{foods}</a>
+            </div>
+            <div>
+                <ResetButton setApp={setApple} setBan={setBanana} setPea={setPear} setOra={setOrange} setList={setFoods}></ResetButton>
+            </div>
         </div>
     )
 }

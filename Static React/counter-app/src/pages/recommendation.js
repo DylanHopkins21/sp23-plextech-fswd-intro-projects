@@ -10,6 +10,7 @@ export default function Recommendation() {
     const app = state[1];
     const pea = state[2];
     const ora = state[3];
+    const foods = state[4];
     const price = (ban + (app * 2) + (pea * 4) + (ora * 5));
     return (
         <div>
@@ -23,7 +24,7 @@ export default function Recommendation() {
         <nav>
             <ul>
             <li>
-                <Link to="/" state={[ban, app, pea, ora]}>Data Entry</Link>
+                <Link to="/" state={[ban, app, pea, ora, foods]}>Data Entry</Link>
             </li>
             </ul>
         </nav>
