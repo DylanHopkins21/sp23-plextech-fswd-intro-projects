@@ -3,6 +3,7 @@ import Counter from '../counter';
 import '../App.css';
 import FruitLabels from '../components/FruitLabels';
 import FoodList from '../components/FoodList';
+import ResetButton from '../components/ResetButton';
 
 function DataEntry() {
     const [bananaCount, setBananaCount] = useState(0);
@@ -19,6 +20,7 @@ function DataEntry() {
             <Counter fruit={orangeCount} setFruit = {setOrangeCount}></Counter>
         </div>
         <FoodList ban={bananaCount} app={appleCount} pea={pearCount} ora={orangeCount}></FoodList>
+        <ResetButton></ResetButton>
     </div>
     
     );
