@@ -13,10 +13,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<DataEntry />}>
+        </Route>
         <Route path="/dataEntry" element={<DataEntry />} />
         <Route path="/recommendation" element={<Recommendation />} />
-        </Route>
       </Routes>
     </Router>
   );
