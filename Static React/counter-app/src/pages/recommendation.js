@@ -5,8 +5,12 @@ import MoneyRec from "../components/MoneyRec";
 export default function Recommendation() {
     return (
         <div>
-            <ItemRec></ItemRec>
-            <MoneyRec></MoneyRec>
+            <div>
+                <ItemRec></ItemRec>
+            </div>
+            <div>
+                <MoneyRec></MoneyRec>
+            </div>
         </div>
     )
 }

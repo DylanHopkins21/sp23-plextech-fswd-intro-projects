@@ -1,8 +1,8 @@
 import React from 'react';
-import Banana from './banana.png';
-import Apple from './apple.png';
-import Pear from './pear.png';
-import Orange from './orange.png';
+import Banana from '../assets/banana.png';
+import Apple from '../assets/apple.png';
+import Pear from '../assets/pear.png';
+import Orange from '../assets/orange.png';
 
 function FruitLabels() {
     return (

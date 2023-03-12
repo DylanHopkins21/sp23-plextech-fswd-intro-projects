@@ -6,10 +6,10 @@ const Layout = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Data Entry</Link>
+            <Link to="/dataentry">Data Entry</Link>
           </li>
           <li>
-            <Link to="/recommendations">Recommendations</Link>
+            <Link to="/recommendation">Recommendations</Link>
           </li>
         </ul>
       </nav>

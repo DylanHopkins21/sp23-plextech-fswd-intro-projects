@@ -8,15 +8,15 @@ export default function ItemRec( {ban, app, pea, ora} ) {
         );
     } else if (low == pea){
         return (
-            <a>You should buy a pear! You've barely spent anything!</a>
+            <a>You should buy a pear! You need more!</a>
         );
     } else if (low == app){
         return (
-            <a>You should buy an apple! You've barely spent anything!</a>
+            <a>You should buy an apple! You need more!</a>
         );
     } else {
         return (
-            <a>You should buy a banana! You've barely spent anything!</a>
+            <a>You should buy a banana! You need more!</a>
         );
     }
 }
